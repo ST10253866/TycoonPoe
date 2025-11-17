@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    tools:context=".OnlineGameActivity">
+
+    <!-- Game View -->
+    <vcmsa.projects.tycoonpoe.GameView
+        android:id="@+id/gameView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Dim overlay (shows when panel is open) -->
+    <View
+        android:id="@+id/dimOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:alpha="0"
+        android:visibility="gone" />
+
+    <!-- Side Panel -->
+    <LinearLayout
+        android:id="@+id/sidePanel"
+        android:orientation="vertical"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:background="#1E1E1E"
+        android:translationX="-260dp"
+        android:elevation="10dp"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online Room"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/edtRoomId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Room ID"
+            android:inputType="number"
+            android:backgroundTint="#d10005"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connect"
+            android:backgroundTint="#d10005"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/edtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Message"
+            android:backgroundTint="#d10005"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnSendMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:backgroundTint="#d10005"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Toggle Button (Hamburger) -->
+    <Button
+        android:id="@+id/btnPanel"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="☰"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#d10005"
+        android:elevation="6dp"
+        android:layout_gravity="top|start"
+        android:layout_margin="16dp"
+        android:tooltipText="Toggle chat panel" />
+
+    <!-- Play Button -->
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play"
+        android:textStyle="bold"
+        android:backgroundTint="#d10005"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp" />
+
+    <!-- Pass Button -->
+    <Button
+        android:id="@+id/btnPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play"
+        android:textStyle="bold"
+        android:backgroundTint="#d10005"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="80dp" />
+
+    <!-- 💤 Hidden Game Log (kept for future use) -->
+    <TextView
+        android:id="@+id/txtLog"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="bottom"
+        android:background="#222222"
+        android:textColor="#FFFFFF"
+        android:scrollbars="vertical"
+        android:padding="8dp"
+        android:text="Game log..."
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <!-- 💬 Floating Message Bubble -->
+    <TextView
+        android:id="@+id/txtMessages"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/message_bubble"
+        android:elevation="8dp"
+        android:padding="10dp"
+        android:text="Waiting for opponent..."
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+</FrameLayout>

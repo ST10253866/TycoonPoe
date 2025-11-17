@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors (based on your logo) -->
+    <color name="primaryPink">#D96B94</color> <!-- Bright logo pink -->
+    <color name="secondaryGreen">#89C9A3</color> <!-- Light minty green -->
+    <color name="backgroundBlush">#FFF4F7</color> <!-- Soft blush background -->
+
+    <!-- Text / Contrast Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="darkText">#333333</color>
+
+    <!-- Additional Neutral Shades (optional, for borders or cards) -->
+    <color name="lightGray">#DDDDDD</color>
+    <color name="mediumGray">#888888</color>
+</resources>

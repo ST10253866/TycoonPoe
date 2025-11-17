@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">TycoonPOE</string>
+    <string name="login">Teken In</string>
+    <string name="register">Registreer</string>
+    <string name="profile">Wysig Profiel</string>
+    <string name="settings">Instellings</string>
+    <string name="save_changes">Stoor Veranderinge</string>
+    <string name="we_miss_you">Ons Mis Jou!</string>
+    <string name="select_language">Kies Taal</string>
+    <string name="select_back_card">Kies Kaart Agterkant</string>
+    <string name="disable_biometrics">Deaktiveer Biometrie</string>
+    <string name="play_cards">Speel Geselekteerde Kaartjies</string>
+    <string name="pass">Pas</string>
+    <string name="create_user">Skep Rekening</string>
+    <string name="user">Gebruikersnaam</string>
+    <string name="email">E-pos</string>
+    <string name="password">Wagwoord</string>
+    <string name="go_to_settings">Gaan na Instellings</string>
+    <string name="go_to_register">Het jy nog nie n rekening nie? Registreer hier</string>
+    <string name="sign_in_to_google">Teken aan met Google</string>
+    <string name="profile2">Profiel</string>
+    <string name="logout">Teken uit</string>
+    <string name="playgame">Speel Speletjie</string>
+    <string name="welcome_back">Welkom terug, Speler!</string>
+    <string name="select_game_mode">Kies Speelwyse</string>
+    <string name="online_mode">Aanlyn-modus</string>
+    <string name="offline_mode">Aflyn-modus</string>
+    <string name="play">Speel</string>
+
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login">
+
+
+    <fragment
+        android:id="@+id/gameModes"
+        android:name="vcmsa.projects.tycoonpoe.GameModes"
+        android:label="fragment_game_modes"
+        tools:layout="@layout/fragment_game_modes" >
+        <action
+            android:id="@+id/action_gameModes_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="vcmsa.projects.tycoonpoe.Login"
+        android:label="Login" >
+        <action
+            android:id="@+id/action_login_to_home2"
+            app:destination="@id/home2" />
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/register" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="vcmsa.projects.tycoonpoe.Register"
+        android:label="Register" >
+        <action
+            android:id="@+id/action_register_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_register_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/home2"
+        android:name="vcmsa.projects.tycoonpoe.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_gameModes"
+            app:destination="@id/gameModes" />
+        <action
+            android:id="@+id/action_home2_to_profile2"
+            app:destination="@id/profile2" />
+        <action
+            android:id="@+id/action_home2_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/settings"
+        android:name="vcmsa.projects.tycoonpoe.Settings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settings_to_profile2"
+            app:destination="@id/profile2" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile2"
+        android:name="vcmsa.projects.tycoonpoe.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile2_to_home2"
+            app:destination="@id/home2" />
+        <action
+            android:id="@+id/action_profile2_to_settings"
+            app:destination="@id/settings" />
+        <action
+            android:id="@+id/action_profile2_to_gameModes"
+            app:destination="@id/gameModes" />
+    </fragment>
+</navigation>

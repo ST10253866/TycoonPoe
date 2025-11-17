@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_user"
+            android:textColor="#d10005"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Username -->
+        <EditText
+            android:id="@+id/etRegisterFirstname"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="@string/user"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:background="@drawable/edittext_bg"
+            android:drawableStart="@android:drawable/ic_menu_myplaces"
+            android:paddingStart="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etRegisterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:background="@drawable/edittext_bg"
+            android:drawableStart="@android:drawable/ic_dialog_email"
+            android:paddingStart="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/etRegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:background="@drawable/edittext_bg"
+            android:drawableStart="@android:drawable/ic_lock_lock"
+            android:paddingStart="12dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/register"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#d10005"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Go to Login -->
+        <TextView
+            android:id="@+id/tvGoToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Log in"
+            android:textColor="#B0BEC5"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</ScrollView>

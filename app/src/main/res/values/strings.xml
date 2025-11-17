@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">TycoonPoe</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="profile">Edit Profile</string>
+    <string name="settings">Settings</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="we_miss_you">We Miss You!</string>
+    <string name="select_language">Select Language</string>
+    <string name="select_back_card">Select Card Back</string>
+    <string name="disable_biometrics">Disable Biometrics</string>
+    <string name="play_cards">Play Selected Cards</string>
+    <string name="pass">Pass</string>
+    <string name="create_user">Create Account</string>
+    <string name="user">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="go_to_settings">Go to Settings</string>
+    <string name="go_to_register">Don’t have an account? Register here</string>
+    <string name="sign_in_to_google">Sign in with Google</string>
+    <string name="profile2">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="playgame">Play Game</string>
+    <string name="welcome_back">Welcome back, Player!</string>
+    <string name="select_game_mode">Select Game Mode</string>
+    <string name="online_mode">Online Mode</string>
+    <string name="offline_mode">Offline Mode</string>
+    <string name="play">Play</string>
+    <!-- Google Sign-In client ID -->
+    <string name="default_web_client_id">194752307267-77uds2ik91tlktdda5itvhv6n122dt47.apps.googleusercontent.com</string>
+</resources>

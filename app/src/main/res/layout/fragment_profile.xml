@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    tools:context=".Profile">
+
+    <!-- 🔙 Back Button (fixed at top) -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|start"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_arrow_back"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Back"
+        android:padding="8dp"
+        app:tint="#FFFFFF" />
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:layout_marginTop="56dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile"
+                android:textColor="#D10005"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="32dp" />
+
+            <!-- Username -->
+            <EditText
+                android:id="@+id/editUsername"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="@string/email"
+                android:inputType="textPersonName"
+                android:drawableStart="@android:drawable/ic_menu_edit"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAAAAA"
+                android:background="@drawable/edittext_bg"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Password -->
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:drawableStart="@android:drawable/ic_lock_lock"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAAAAA"
+                android:background="@drawable/edittext_bg"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/btnSaveProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save_changes"
+                android:backgroundTint="#D10005"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"
+                android:padding="12dp"/>
+
+            <!-- Settings Button -->
+            <Button
+                android:id="@+id/btnGoToSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/go_to_settings"
+                android:backgroundTint="#333333"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:padding="12dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

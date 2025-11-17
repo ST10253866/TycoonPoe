@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#121212"
+    android:padding="24dp"
+    tools:context=".Settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- 🔙 Back Button -->
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_arrow_back"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back"
+            android:layout_gravity="start"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"
+            app:tint="#FFFFFF" />
+
+        <!-- Screen Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:textColor="#D10005"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Language Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_language"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/spinner_bg"
+            android:dropDownWidth="match_parent"
+            android:dropDownHorizontalOffset="0dp"
+            android:dropDownVerticalOffset="0dp"
+            android:padding="12dp"
+            android:popupBackground="#1E1E1E"
+            android:spinnerMode="dropdown" />
+
+        <!-- Card Back Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_back_card"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:spacing="16dp">
+
+                <ImageButton
+                    android:id="@+id/cardBack1"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/card_back1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Card Back 1"
+                    android:scaleType="fitCenter"
+                    android:layout_marginEnd="12dp" />
+
+                <ImageButton
+                    android:id="@+id/cardBack2"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/card_back2"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Card Back 2"
+                    android:scaleType="fitCenter"
+                    android:layout_marginEnd="12dp" />
+
+                <ImageButton
+                    android:id="@+id/cardBack3"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Card Back 3"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/card_back3" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Disable Biometrics Button -->
+        <Button
+            android:id="@+id/btnDisableBiometrics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/disable_biometrics"
+            android:backgroundTint="#D10005"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+</ScrollView>

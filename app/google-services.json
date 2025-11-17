@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "194752307267",
+    "project_id": "tycoonpoe-c768d",
+    "storage_bucket": "tycoonpoe-c768d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194752307267:android:61ef9c234d02bc995934f6",
+        "android_client_info": {
+          "package_name": "vcmsa.projects.tycoonpoe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "194752307267-2sppcm6t2lftbkdr97m9ofb3hilc7tp1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vcmsa.projects.tycoonpoe",
+            "certificate_hash": "2d9e231809d1504349796a0b6407dca1d41df12d"
+          }
+        },
+        {
+          "client_id": "194752307267-77uds2ik91tlktdda5itvhv6n122dt47.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-7Ev3_FZGMhUmrZAE1QkbQP986TNFEUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "194752307267-77uds2ik91tlktdda5itvhv6n122dt47.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

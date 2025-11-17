@@ -1,0 +1,19 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed State -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#2C2C2C"/> <!-- Darker grey when pressed -->
+            <stroke android:width="3dp" android:color="#d10005"/> <!-- Persona Red -->
+            <corners android:radius="16dp"/>
+        </shape>
+    </item>
+
+    <!-- Default State -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#1E1E1E"/> <!-- Dark grey background -->
+            <stroke android:width="3dp" android:color="#d10005"/> <!-- Persona Red -->
+            <corners android:radius="16dp"/>
+        </shape>
+    </item>
+</selector>

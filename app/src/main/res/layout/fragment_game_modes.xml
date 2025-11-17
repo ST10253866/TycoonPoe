@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:padding="24dp"
+    tools:context=".GameModes">
+
+    <!-- 🔙 Back Button -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_arrow_back"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Back"
+        android:layout_gravity="start"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"
+        app:tint="#FFFFFF" />
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_game_mode"
+        android:textColor="#d10005"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Online Mode -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="40dp">
+
+        <ImageButton
+            android:id="@+id/btnOnline"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/multiplayer"
+            android:contentDescription="Online Mode"
+            android:background="@drawable/btn_game_mode_bg"
+            android:scaleType="fitCenter"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/online_mode"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+
+    <!-- Offline Mode -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/btnOffline"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/singleplayer"
+            android:contentDescription="Offline Mode"
+            android:background="@drawable/btn_game_mode_bg"
+            android:scaleType="fitCenter"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/offline_mode"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">TycoonPOE</string>
+    <string name="login">Ngena</string>
+    <string name="register">Bhalisa</string>
+    <string name="profile">Hlela Iphrofayela</string>
+    <string name="settings">Izilungiselelo</string>
+    <string name="save_changes">Londoloza Izinguquko</string>
+    <string name="we_miss_you">Sikukhumbula!</string>
+    <string name="select_language">Khetha ulimi</string>
+    <string name="select_back_card">Khetha Emuva Kwekhadi</string>
+    <string name="disable_biometrics">Khubaza i-Biometrics</string>
+    <string name="play_cards">Dlala Amakhadi Akhethiwe</string>
+    <string name="pass">Dlula</string>
+    <string name="create_user">Dala i-Akhawunti</string>
+    <string name="user">Gebruikersnaam</string>
+    <string name="email">I-imeyili</string>
+    <string name="password">Iphasiwedi</string>
+    <string name="go_to_settings">Hamba ku-Settings</string>
+    <string name="go_to_register">Awunayo i-akhawunti? Bhalisela lapha</string>
+    <string name="sign_in_to_google">Ngena ngemvume usebenzisa i-Google</string>
+    <string name="profile2">Iphrofayela</string>
+    <string name="logout">Phuma</string>
+    <string name="playgame">Dlala Umdlalo</string>
+    <string name="welcome_back">Siyakwamukela emuva, Mdlali!</string>
+    <string name="select_game_mode">Khetha Imodi Yomdlalo</string>
+    <string name="online_mode">Imodi eku-inthanethi</string>
+    <string name="offline_mode">Imodi Engaxhunyiwe Ku-inthanethi</string>
+    <string name="play">Dlala</string>
+
+</resources>
